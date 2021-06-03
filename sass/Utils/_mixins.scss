@@ -11,6 +11,11 @@
     align-items: center;
 
 }
+@mixin Flex-start {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 @mixin Box-restaurants {
     position: relative;

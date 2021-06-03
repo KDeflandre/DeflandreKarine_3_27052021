@@ -2,4 +2,13 @@
     @include Flex-column;
     background-color: #F6F6F6;
     text-align: center;
+    h2 {
+        width: 70%;
+        margin-top:35px;
+        margin-bottom: 0px;
+    }
+    p {
+        width: 80%;
+        margin: 10px;
+    }
 }
