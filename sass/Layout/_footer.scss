@@ -1,0 +1,33 @@
+footer {
+    margin: 0 auto;
+    background-color: #353535 ;
+    color:white;
+    padding-top: 25px;
+
+    .Nav-footer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-family: "shrikhand", Arial, Helvetica, sans-serif;
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .Nav-footer__icon {
+        margin-right: 5px;
+        font-size: 0.9em;
+    }
+}
+

@@ -3,20 +3,3 @@
     box-sizing: border-box;
 }
 
-.Restaurants {
-    background-color: #F6F6F6;
-    padding:10px;
-}
-
-.Boxes-restaurants {
-    @include Flex-column;
-a {
-    @include Box-restaurants;
-}
-img {
-    @include Box-restaurants__img;
-}
-.Box-restaurants__info {
-    @include Box-restaurants__info;
-}
-}
