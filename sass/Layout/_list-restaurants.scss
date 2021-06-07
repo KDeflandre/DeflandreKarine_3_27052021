@@ -1,20 +1,64 @@
 .Restaurants {
     background-color: #F6F6F6;
     padding:10px;
-}
 
 h2 {
     margin-left:5px;
+    width: 90%;
+    margin: 16px auto ;
+    max-width: 352px;
+    @include Tablet-only {
+        text-align: center;
+        
+    }
 }
-
+}
 .Boxes-restaurants {
     @include Flex-column;
+    @include Tablet-only {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 16px auto;
+        max-width: 800px;
+    }
+    @include Desktop-only {
+        max-width: 1480px;
+    }
+
 a {
-    @include Box-restaurants;
+    position: relative;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 352px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow:10px 8px 10px rgb(189, 187, 187) ;
+    transition: all .25s ease;
+    margin-bottom: 16px;
+    @include Tablet-only {
+        margin: 15px;
+        max-width: 340px;
+    }
 }
 img {
     @include Box-restaurants__img;
 }
+
+#Palette {
+    object-position: 0 -44px;
+}
+
+#Note {
+    object-fit: cover;
+    object-position: 0 -163px;
+}
+
+#Francaise , #Delice {
+    object-position: 0 -71px;
+}
+
 .Box-restaurants__info {
     @include Box-restaurants__info;
 }
@@ -52,5 +96,6 @@ p {
     padding: 5px 0 5px 0;
     border-radius: 5%;
 }
+
 
 }

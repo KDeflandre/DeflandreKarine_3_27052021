@@ -6,15 +6,22 @@ footer {
 
     .Nav-footer {
         width: 90%;
+        max-width: 352px;
         margin: auto;
         display: flex;
         flex-direction: column;
+        @include Tablet-only {
+            text-align: center;
+        }
     }
 
     h2 {
         font-family: "shrikhand", Arial, Helvetica, sans-serif;
         margin: 0;
         font-size: 1.2em;
+        @include Tablet-only {
+            font-size:1.6em ;
+        }
     }
 
     ul {

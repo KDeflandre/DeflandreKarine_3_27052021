@@ -1,12 +1,32 @@
 .Operation {
     width: 90%;
+    max-width: 350px;
     margin:auto;
     margin-bottom: 40px;
+    
     h2 {
         margin-left:5px;
+    @include Tablet-only {
+        text-align: center;
+        margin-left: 0px;
     }
+    }
+    @include Tablet-only {
+        max-width: 350px;
+        margin:auto;
+    }
+    @include Desktop-only {
+        max-width: none;
+    }
+
     .Navigation-operation {
         @include Flex-column;
+        @include Desktop-only {
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 20px
+        }
+        
     }
     .Navigation-operation__btn {
         @include Flex-start;
@@ -17,6 +37,10 @@
         background-color:#f6f6f6 ;
         margin-bottom: 15px;
         box-shadow:4px 10px 14px #e5e5e5;
+        @include Desktop-only {
+        margin: 15px;
+        max-width: 372px;
+        }
     }
 
     .Navigation-operation__btn__nbr {

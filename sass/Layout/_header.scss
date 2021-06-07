@@ -3,12 +3,18 @@ header {
 }
 
 #Logo {
-    @include Logo;
+    text-align: center;
+    margin:0 auto;
+    display:block;
+  
 
 img {
-    width: 45%;
+    max-width: 45%;
     height: auto;
     margin:10px
+    // @include Tablet-only {
+    //     max-width: 70%;
+    // }
 }
 }
 
