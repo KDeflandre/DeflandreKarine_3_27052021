@@ -80,8 +80,53 @@ p {
   margin: 15.5px 22.5px 15.5px 22.5px;
 }
 
+.btn-meal {
+  display: flex;
+  background-color: white;
+  width: 90%;
+  max-width: 352px;
+  height: 68px;
+  border-radius: 15px;
+  margin: 10px auto;
+  padding-left: 20px;
+  box-shadow: 2px 2px 14px #aaaaaa;
+  overflow: hidden;
+}
+
+.btn-meal .btn-meal__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 82%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btn-meal .btn-meal__txt h3 {
+  overflow: hidden;
+  margin: 14px 0 0 0;
+}
+
+.btn-meal .btn-meal__txt p {
+  font-size: 0.8em;
+  margin: 7px 0 12px;
+  overflow: hidden;
+}
+
+.btn-meal .btn-meal__price {
+  margin: 40px 8px 0px;
+  font-size: 0.9em;
+}
+
 header {
   margin: 10px auto 0px auto;
+  position: relative;
+}
+
+header .Arrow {
+  position: absolute;
+  top: 15px;
+  left: 20px;
 }
 
 #Logo {
@@ -389,5 +434,72 @@ footer li {
 footer .Nav-footer__icon {
   margin-right: 5px;
   font-size: 0.9em;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Menu h2 {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+.Menu p {
+  width: 80%;
+  margin: 10px;
+}
+
+.Menu .Menu__img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.Menu-selection {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -45px;
+  padding-bottom: 20px;
+}
+
+.Menu-selection .Menu-selection__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.Menu-selection .Menu-selection__title .Menu-selection__title__heart {
+  font-size: 1.5em;
+}
+
+.Menu-selection__category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 352px;
+  margin-bottom: 15px;
+}
+
+.Menu-selection__category .Menu-selection__category__title {
+  margin-bottom: 15px;
+}
+
+.Menu-selection__category .Menu-selection__category__title h3 {
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+
+.Blue-line {
+  background-color: #99e2d0;
+  width: 50px;
+  height: 3px;
 }
 /*# sourceMappingURL=style.css.map */
