@@ -19,14 +19,14 @@
     height: 68px ;
     border-radius: 15px;
     margin: 10px auto;
-    padding-left: 20px;
+    padding-left: 10px;
     box-shadow: 2px 2px 14px #aaaaaa;
     overflow: hidden;
     .btn-meal__txt {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 82%;
+        width: 85%;
         overflow: hidden;
         white-space: nowrap;
     }
@@ -36,14 +36,25 @@
     }
 
     .btn-meal__txt p {
-        font-size: 0.8em;
+        font-size: 0.84em;
         margin:7px 0 12px;
         overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .btn-meal__price {
         margin: 40px 8px 0px;
-        font-size: 0.9em;
+        font-size: 0.95em;
+        font-family: 'roboto medium',Arial, Helvetica, sans-serif;
     }
+
+    
 }
 
+.Menu-selection {
+    
+    .btn-explore {
+        margin:15px 15px 50px 15px;
+        padding:0px 23px 0px 23px;
+    }
+}
