@@ -22,6 +22,9 @@
     padding-left: 10px;
     box-shadow: 2px 2px 14px #aaaaaa;
     overflow: hidden;
+    @include Tablet-only {
+        max-width: 480px;
+    }
     .btn-meal__txt {
         display: flex;
         flex-direction: column;

@@ -93,6 +93,12 @@ p {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .btn-meal {
+    max-width: 480px;
+  }
+}
+
 .btn-meal .btn-meal__txt {
   display: flex;
   flex-direction: column;
@@ -451,6 +457,7 @@ footer .Nav-footer__icon {
 
 .Menu h2 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
 }
 
 .Menu p {
@@ -479,11 +486,19 @@ footer .Nav-footer__icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .Menu-selection .Menu-selection__title {
+    justify-content: space-evenly;
+    width: 55%;
+  }
 }
 
 .Menu-selection .Menu-selection__title .Menu-selection__title__heart {
   font-size: 1.5em;
+  margin: 15px;
 }
 
 .Menu-selection__category {
@@ -493,6 +508,12 @@ footer .Nav-footer__icon {
   width: 90%;
   max-width: 352px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .Menu-selection__category {
+    max-width: 480px;
+  }
 }
 
 .Menu-selection__category .Menu-selection__category__title {

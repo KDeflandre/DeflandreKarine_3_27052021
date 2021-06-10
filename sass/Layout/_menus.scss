@@ -4,6 +4,7 @@
        
         h2 {
         font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+        font-size: 1.7em;
         }
         
         p {
@@ -31,10 +32,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        width: 90%;
+        @include Tablet-only {
+            justify-content: space-evenly;
+            width: 55%;
+        }
     
     .Menu-selection__title__heart {
         font-size:1.5em ;
+        margin: 15px;
     }
 }
 }
@@ -46,6 +52,9 @@
     width: 90%;
     max-width: 352px ;
     margin-bottom: 15px;
+    @include Tablet-only {
+        max-width: 480px;
+    }
     .Menu-selection__category__title {
         margin-bottom: 15px;
     }
