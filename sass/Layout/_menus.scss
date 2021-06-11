@@ -5,6 +5,9 @@
         h2 {
         font-family: "Shrikhand", Arial, Helvetica, sans-serif;
         font-size: 1.7em;
+        @include Tablet-only {
+            font-size:1.9em;
+        }
         }
         
         p {
@@ -32,15 +35,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
+        width: 85%;
         @include Tablet-only {
             justify-content: space-evenly;
-            width: 55%;
+            width: 90%;
         }
     
     .Menu-selection__title__heart {
         font-size:1.5em ;
         margin: 15px;
+        @include Tablet-only {
+            font-size: 1.9em;
+        }
     }
 }
 }
@@ -56,7 +62,11 @@
         max-width: 480px;
     }
     .Menu-selection__category__title {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        @include Tablet-only {
+            margin-left: 22px;
+        }
     }
     .Menu-selection__category__title h3 {
         font-family: "Roboto",Arial, Helvetica, sans-serif;
