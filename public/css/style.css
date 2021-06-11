@@ -493,12 +493,21 @@ footer .Nav-footer__icon {
   justify-content: space-between;
   align-items: center;
   width: 85%;
+  max-width: 320px;
 }
 
 @media screen and (min-width: 768px) {
   .Menu-selection .Menu-selection__title {
     justify-content: space-evenly;
     width: 90%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Menu-selection .Menu-selection__title {
+    width: 60%;
+    max-width: 610px;
   }
 }
 

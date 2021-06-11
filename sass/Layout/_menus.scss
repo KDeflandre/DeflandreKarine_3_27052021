@@ -36,9 +36,15 @@
         justify-content: space-between;
         align-items: center;
         width: 85%;
+        max-width: 320px;
         @include Tablet-only {
             justify-content: space-evenly;
             width: 90%;
+            max-width: 600px;
+        }
+        @include Desktop-only {
+            width: 60%;
+            max-width: 610px;
         }
     
     .Menu-selection__title__heart {
@@ -60,6 +66,9 @@
     margin-bottom: 15px;
     @include Tablet-only {
         max-width: 480px;
+    }
+    @include Desktop-only {
+        
     }
     .Menu-selection__category__title {
         margin-bottom: 10px;
