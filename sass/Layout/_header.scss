@@ -7,6 +7,9 @@ header .Arrow {
     position:absolute;
     top:15px;
     left:20px;
+    @include Tablet-only {
+        font-size: 1.2em;
+    }
 }
 
 #Logo {
