@@ -28,7 +28,8 @@
         }
         
     }
-    .Navigation-operation__btn {
+}
+    .Navigation-operation-btn {
         @include Flex-start;
         position:relative;
         width:90%;
@@ -36,14 +37,43 @@
         border-radius: 25px;
         background-color:#f6f6f6 ;
         margin-bottom: 15px;
-        box-shadow:4px 10px 14px #e5e5e5;
+        @include Shadow-btn ;
+        z-index: 1;
+        
+
+        &:hover {
+            box-shadow: 4px 10px 14px darken(#aaaaaa, 30%);
+            &::after {
+               opacity: 20%;
+           }
+           & .Navigation-operation-btn__icon {
+                color:$color-primary;
+        }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top:0;
+            right:0;
+            bottom: 0;
+            left: 0;
+            border-radius: 25px;
+            background-color: $color-primary;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+           
+        }
+
+
         @include Desktop-only {
         margin: 15px;
         max-width: 372px;
         }
-    }
+    
 
-    .Navigation-operation__btn__nbr {
+    &__nbr {
         background-color: $color-primary;
         color:white;
         width: 28px;
@@ -54,9 +84,9 @@
         padding-top: 7px;
     }
 
-    .Navigation-operation__btn__icon {
+    &__icon {
         margin: 20px;
-        font-size: 25px;
+        font-size: 18px;
         color: #7e7e7e;
     }
 

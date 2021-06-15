@@ -65,6 +65,11 @@ p {
   margin: 15.5px 22.5px 15.5px 22.5px;
 }
 
+.btn-explore:hover {
+  filter: brightness(110%);
+  box-shadow: 4px 10px 14px #5e5e5e;
+}
+
 .btn-meal {
   display: flex;
   background-color: white;
@@ -260,7 +265,7 @@ header .Arrow {
   }
 }
 
-.Operation .Navigation-operation__btn {
+.Navigation-operation-btn {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -270,17 +275,44 @@ header .Arrow {
   border-radius: 25px;
   background-color: #f6f6f6;
   margin-bottom: 15px;
-  box-shadow: 4px 10px 14px #e5e5e5;
+  box-shadow: 4px 10px 14px #aaaaaa;
+  z-index: 1;
+}
+
+.Navigation-operation-btn:hover {
+  box-shadow: 4px 10px 14px #5e5e5e;
+}
+
+.Navigation-operation-btn:hover::after {
+  opacity: 20%;
+}
+
+.Navigation-operation-btn:hover .Navigation-operation-btn__icon {
+  color: #9356DC;
+}
+
+.Navigation-operation-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+  background-color: #9356DC;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 @media screen and (min-width: 1024px) {
-  .Operation .Navigation-operation__btn {
+  .Navigation-operation-btn {
     margin: 15px;
     max-width: 372px;
   }
 }
 
-.Operation .Navigation-operation__btn__nbr {
+.Navigation-operation-btn__nbr {
   background-color: #9356DC;
   color: white;
   width: 28px;
@@ -291,9 +323,9 @@ header .Arrow {
   padding-top: 7px;
 }
 
-.Operation .Navigation-operation__btn__icon {
+.Navigation-operation-btn__icon {
   margin: 20px;
-  font-size: 25px;
+  font-size: 18px;
   color: #7e7e7e;
 }
 
@@ -361,7 +393,7 @@ header .Arrow {
   }
 }
 
-.Boxes-restaurants a {
+.Boxes-restaurants .Box-restaurants {
   position: relative;
   margin: 15px auto;
   width: 90%;
@@ -372,10 +404,34 @@ header .Arrow {
   box-shadow: 10px 8px 10px #bdbbbb;
   transition: all .25s ease;
   margin-bottom: 16px;
+  z-index: 1;
+}
+
+.Boxes-restaurants .Box-restaurants:hover {
+  filter: brightness(110%);
+  box-shadow: 4px 10px 14px #5e5e5e;
+}
+
+.Boxes-restaurants .Box-restaurants:hover::after {
+  opacity: 20%;
+}
+
+.Boxes-restaurants .Box-restaurants::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+  background-color: #9356DC;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 @media screen and (min-width: 768px) {
-  .Boxes-restaurants a {
+  .Boxes-restaurants .Box-restaurants {
     margin: 15px;
     max-width: 340px;
   }
