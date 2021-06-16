@@ -483,10 +483,48 @@ header .Arrow {
 }
 
 .Boxes-restaurants .Box-restaurants__info__heart {
-  font-size: 1.7em;
   position: relative;
+  font-size: 1.7em;
   margin: 20px;
-  color: #2e2e2e;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.Boxes-restaurants .Empty-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Boxes-restaurants .Empty-heart:hover {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.Boxes-restaurants .Full-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s linear 0s;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  width: 100%;
+  height: 0;
+}
+
+.Boxes-restaurants .Full-heart:hover {
+  opacity: 1;
+  height: 100%;
+}
+
+.Boxes-restaurants.Empty-heart:hover {
+  opacity: 1;
 }
 
 .Boxes-restaurants .Box-restaurants__new {
