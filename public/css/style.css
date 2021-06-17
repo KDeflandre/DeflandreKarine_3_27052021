@@ -1,3 +1,37 @@
+@keyframes Fadein {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(0, 16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes Grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90px;
+  }
+}
+
+@keyframes Reduce {
+  0% {
+    width: 90px;
+    filter: brightness(110%);
+  }
+  100% {
+    width: 0;
+  }
+}
+
 body {
   margin: 0 auto;
   min-width: 320px;
@@ -81,6 +115,19 @@ p {
   padding-left: 10px;
   box-shadow: 2px 2px 14px #aaaaaa;
   overflow: hidden;
+  animation: Fadein 2s both;
+}
+
+.btn-meal:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.btn-meal:nth-child(3) {
+  animation-delay: .4s;
+}
+
+.btn-meal:nth-child(4) {
+  animation-delay: .6s;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,6 +162,41 @@ p {
   font-size: 0.95em;
   font-family: 'Roboto',Arial, Helvetica, sans-serif;
   font-weight: 500;
+}
+
+.btn-meal:hover {
+  filter: brightness(110%);
+  box-shadow: 4px 10px 14px #5e5e5e;
+}
+
+.btn-meal:hover > .btn-meal__select {
+  transform: translateX(0);
+  animation: Grow 600ms forwards;
+}
+
+.btn-meal:hover > .btn-meal__select > .Check-circle {
+  transform: rotate(1turn);
+}
+
+.btn-meal .btn-meal__select {
+  background-color: #99E2D0;
+  border-radius: 0 13px 13px 0;
+  height: 100%;
+  width: 0;
+  text-align: center;
+  margin-left: 5px;
+  transform-origin: right;
+  transform: translateX(10px);
+  animation: Reduce 500ms ease-in-out forwards;
+}
+
+.btn-meal .Check-circle {
+  display: block;
+  font-size: 1.6em;
+  margin-top: 20px;
+  color: white;
+  transform: rotate(0);
+  transition: transform 600ms ease-in-out;
 }
 
 .Menu-selection .btn-explore {

@@ -27,9 +27,23 @@
     padding-left: 10px;
     box-shadow: 2px 2px 14px #aaaaaa;
     overflow: hidden;
+
+    animation: Fadein 2s both;
+    &:nth-child(2) {
+        animation-delay: .2s;
+    }
+    &:nth-child(3) {
+        animation-delay: .4s;
+    }
+    &:nth-child(4) {
+        animation-delay: .6s;
+    }
+    
+
     @include Tablet-only {
         max-width: 480px;
     }
+
     .btn-meal__txt {
         display: flex;
         flex-direction: column;
@@ -56,8 +70,40 @@
         font-family: 'Roboto',Arial, Helvetica, sans-serif;
         font-weight: 500;
     }
+    &:hover {
+        filter: brightness(110%);
+        box-shadow: 4px 10px 14px darken(#aaaaaa, 30%);
+    }
 
+    &:hover >.btn-meal__select {
+        transform: translateX(0);
+        animation:Grow 600ms forwards;
+        > .Check-circle {
+            transform: rotate(1turn);
+        }
+
+    }
+
+    .btn-meal__select {
+        background-color: $color-tertiary;
+        border-radius: 0 13px 13px 0;
+        height: 100%;
+        width: 0;
+        text-align: center;
+        margin-left: 5px;
+        transform-origin: right;
+        transform:translateX(10px);
+        animation: Reduce 500ms ease-in-out forwards;
+    }
     
+    .Check-circle {
+        display:block;
+        font-size: 1.6em;
+        margin-top: 20px;
+        color:white;
+        transform:rotate(0);
+        transition: transform 600ms ease-in-out;
+    }
 }
 
 .Menu-selection {
