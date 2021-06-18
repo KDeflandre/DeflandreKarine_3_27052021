@@ -1,3 +1,41 @@
+@keyframes Loader-fadeout {
+    50% {
+        opacity:1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes Loader-cutlery {
+
+    to {
+        transform: scale(0.8);
+        opacity: 0.5;
+      }
+
+}
+
+@keyframes tap {
+	0% {
+		transform: translateY(0);
+	}
+	
+	60% {
+		transform: translateY(-1em);
+	}
+	
+	70% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
 @keyframes Fadein {
     0%{
         opacity: 0;
