@@ -115,7 +115,7 @@ p {
   padding-left: 10px;
   box-shadow: 2px 2px 14px #aaaaaa;
   overflow: hidden;
-  animation: Fadein 2s both;
+  animation: Fadein 1s both;
 }
 
 .btn-meal:nth-child(2) {
@@ -730,15 +730,55 @@ footer .Nav-footer__icon {
   }
 }
 
-.Menu-selection .Menu-selection__title .Menu-selection__title__heart {
-  font-size: 1.5em;
-  margin: 15px;
+.Menu-selection__title__heart {
+  position: relative;
+  font-size: 1.7em;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  .Menu-selection .Menu-selection__title .Menu-selection__title__heart {
+  .Menu-selection__title__heart {
     font-size: 1.9em;
   }
+}
+
+.Menu-selection__title__heart .Empty-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Menu-selection__title__heart .Empty-heart:hover {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.Menu-selection__title__heart .Full-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s linear 0s;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  width: 100%;
+  height: 0;
+}
+
+.Menu-selection__title__heart .Full-heart:hover {
+  opacity: 1;
+  height: 100%;
+}
+
+.Menu-selection__title__heart.Empty-heart:hover {
+  opacity: 1;
 }
 
 .Menu-selection__category {
