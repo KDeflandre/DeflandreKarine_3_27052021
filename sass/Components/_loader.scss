@@ -10,40 +10,25 @@
     justify-content:center;
     align-items: center;
     background-color: white;
-    animation: Loader-fadeout 5s forwards;
-}
+    animation: Loader-fadeout 3s forwards;
 
-// .Loader-animation {
-//     width: 200px;
-//     height: 200px;
-//     position:relative;
-// }
-
-.Loader-animation__cutlery {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    animation-name: tap;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-}
-
-.Loader-animation__cutlery:nth-child(1) {
-    animation-delay: .5s ; 
-}
-
-.Loader-animation__cutlery:nth-child(2){
-    animation-delay: .9s ;
-}
-
-.Loader-animation__cutlery:nth-child(3) {
-    animation-delay: .9s ;
-}
-
-
-.Loader-animation__cutlery img {
-    width: 100%;
-    height: 100%;
+    &-animation__cutlery {
+        width: 200px;
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        img {
+            width: 100%;
+            height: 100%;
+            animation-name: tap;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+    
+            &:nth-child(1) { animation-delay: .1s; }
+            &:nth-child(2) { animation-delay: .4s; }
+            &:nth-child(3) { animation-delay: .7s; }
+        }
+    }
 }
