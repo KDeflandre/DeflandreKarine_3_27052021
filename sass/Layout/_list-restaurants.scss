@@ -21,6 +21,7 @@ h2 {
         flex-wrap: wrap;
         margin: 16px auto;
         max-width: 800px;
+        transition: all .25s ease ;
     }
     @include Desktop-only {
         max-width: 1480px;
@@ -61,13 +62,13 @@ h2 {
         transition: opacity 250ms;
        
     }
-
     
     @include Tablet-only {
         margin: 15px;
         max-width: 340px;
     }
 }
+
 img {
     @include Box-restaurants__img;
 }
@@ -112,7 +113,6 @@ p {
     height: 30px;
     cursor: pointer;
 }
-
     .Empty-heart {
         position: absolute;
         top: 0;
@@ -175,6 +175,5 @@ p {
     padding: 5px 0 5px 0;
     border-radius: 5%;
 }
-
 
 }

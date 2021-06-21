@@ -39,6 +39,7 @@
         margin-bottom: 15px;
         @include Shadow-btn ;
         z-index: 1;
+        transition: all .25s ease ;
         
 
         &:hover {

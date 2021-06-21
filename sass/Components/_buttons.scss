@@ -39,6 +39,9 @@
     &:nth-child(4) {
         animation-delay: .6s;
     }
+    &:nth-child(5) {
+        animation-delay: .8s;
+    }
     
     @include Tablet-only {
         max-width: 480px;
@@ -51,18 +54,19 @@
         width: 85%;
         overflow: hidden;
         white-space: nowrap;
-    }
-    .btn-meal__txt h3 {
+    
+    & h3 {
         overflow: hidden;
         margin: 14px 0 0 0 ;
     }
 
-    .btn-meal__txt p {
+    & p {
         font-size: 0.84em;
         margin:7px 0 12px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
+}
 
     .btn-meal__price {
         margin: 40px 8px 0px;
@@ -71,7 +75,6 @@
         font-weight: 500;
     }
     &:hover {
-        // filter: brightness(110%);
         box-shadow: 4px 10px 14px darken(#aaaaaa, 30%);
     }
 
@@ -94,6 +97,9 @@
         transform-origin: right;
         transform:translateX(10px);
         animation: Reduce 500ms ease-in-out forwards;
+        @include Tablet-only {
+            transform:translateX(20px);
+        }
     }
     
     .Check-circle {

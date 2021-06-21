@@ -8,13 +8,6 @@
   }
 }
 
-@keyframes Loader-cutlery {
-  to {
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-}
-
 @keyframes tap {
   0% {
     transform: translateY(0);
@@ -163,6 +156,10 @@ p {
   animation-delay: .6s;
 }
 
+.btn-meal:nth-child(5) {
+  animation-delay: .8s;
+}
+
 @media screen and (min-width: 768px) {
   .btn-meal {
     max-width: 480px;
@@ -221,6 +218,12 @@ p {
   transform-origin: right;
   transform: translateX(10px);
   animation: Reduce 500ms ease-in-out forwards;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-meal .btn-meal__select {
+    transform: translateX(20px);
+  }
 }
 
 .btn-meal .Check-circle {
@@ -382,6 +385,7 @@ header .Arrow {
   margin-bottom: 15px;
   box-shadow: 4px 10px 14px #aaaaaa;
   z-index: 1;
+  transition: all .25s ease;
 }
 
 .Navigation-operation-btn:hover {
@@ -489,6 +493,7 @@ header .Arrow {
     flex-wrap: wrap;
     margin: 16px auto;
     max-width: 800px;
+    transition: all .25s ease;
   }
 }
 
