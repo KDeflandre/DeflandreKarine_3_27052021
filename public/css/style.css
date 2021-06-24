@@ -141,6 +141,7 @@ p {
   padding-left: 10px;
   box-shadow: 2px 2px 14px #aaaaaa;
   overflow: hidden;
+  cursor: pointer;
   animation: Fadein 1s both;
 }
 
@@ -718,7 +719,7 @@ footer .Nav-footer__icon {
 
 .Menu h2 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 @media screen and (min-width: 768px) {
@@ -753,22 +754,14 @@ footer .Nav-footer__icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
-  max-width: 320px;
+  width: 80%;
+  max-width: 352px;
 }
 
 @media screen and (min-width: 768px) {
   .Menu-selection__title {
-    justify-content: space-evenly;
     width: 90%;
-    max-width: 600px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .Menu-selection__title {
-    width: 60%;
-    max-width: 610px;
+    max-width: 460px;
   }
 }
 

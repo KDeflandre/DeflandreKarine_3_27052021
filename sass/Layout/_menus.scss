@@ -4,7 +4,7 @@
        
         h2 {
         font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-        font-size: 1.7em;
+        font-size: 1.6em;
         @include Tablet-only {
             font-size:1.9em;
         }
@@ -34,16 +34,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 85%;
-        max-width: 320px;
+        width: 80%;
+        max-width: 352px;
         @include Tablet-only {
-            justify-content: space-evenly;
+            // justify-content: space-evenly;
             width: 90%;
-            max-width: 600px;
+            max-width: 460px;
         }
         @include Desktop-only {
-            width: 60%;
-            max-width: 610px;
+            // width: 60%;
+            // max-width: 610px;
         }
 }
 
